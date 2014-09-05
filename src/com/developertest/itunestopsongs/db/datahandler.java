@@ -52,6 +52,16 @@ public class datahandler extends SQLiteOpenHelper {
 		onCreate(db);
 
 	}
+	
+	/*
+	 * lets make a function to delete a fav song
+	 */
+	public void removeFromFavs(song s)
+	{
+		SQLiteDatabase m_db = this.getWritableDatabase();
+		m_db.delete(TABLE_SONGS, COLUMN_SONGNAME +" = ?", new String[]{s.getName()});
+		m_db.close();
+	}
 
 	/*
 	 * lets make a function to add songs to the db
