@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.developertest.itunestopsongs.SongsActivity" >
+
+    <item
+        android:id="@+id/action_save_image"
+        android:title="Download Image"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_add_favorites"
+        android:title="Add To Favorites"
+        app:showAsAction="never"/>
+
+</menu>
